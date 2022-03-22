@@ -4,7 +4,7 @@ from PyPDF4 import PdfFileReader, PdfFileWriter
 
 # **********************
 
-file_path = 'RF210145.pdf'
+file_path = 'FileName.pdf'
 pdf = PdfFileReader(file_path)
 
 # *********************
