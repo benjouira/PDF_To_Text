@@ -19,3 +19,8 @@ Image("bh.jpg")
 
 output = reader.readtext('bh.jpg')
 output
+
+
+cord = output[-1][0]
+x_min, y_min = [int(min(idx)) for idx in zip(*cord)]
+x_max, y_max = [int(max(idx)) for idx in zip(*cord)]
