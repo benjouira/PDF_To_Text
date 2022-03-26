@@ -15,6 +15,23 @@ rcParams['figure.figsize'] = 8, 16
 reader = easyocr.Reader(['fr'])
 Image("bh.jpg")
 
+# **********************
+
+%pylab inline
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+
+from PIL import Image
+im = Image.open("bh.jpg")
+
+# img = mpimg.imread('bh.jpg')
+
+crop_rectangle = (70, 90, 130, 110)
+cropped_img = im.crop(crop_rectangle)
+
+imgplot = plt.imshow(cropped_img)
+plt.show()
+
 # *************************
 
 output = reader.readtext('bh.jpg')
