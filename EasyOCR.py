@@ -37,6 +37,11 @@ cropped_img.save('cropped_img.jpg')
 output = reader.readtext('cropped_img.jpg')
 output
 
+crop_rectangle = (0, 200, 230, 260)
+cropped_img = im.crop(crop_rectangle)
+
+imgplot = plt.imshow(cropped_img)
+plt.show()
 # *************************
 
 output = reader.readtext('bh.jpg')
