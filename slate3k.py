@@ -16,10 +16,10 @@ import tabula
 
 # Read pdf into a list of DataFrame
 dfs = tabula.read_pdf("file.pdf", pages='all')
-dfs
+print(dfs)
 
-type(dfs[0])
+print(type(dfs[0]))
 
-dfs[0].info() 
+print(dfs[0].info() )
 
-dfs[0]["columnName"][1]
+print(dfs[0]["columnName"][1])
