@@ -23,3 +23,5 @@ print(type(dfs[0]))
 print(dfs[0].info() )
 
 print(dfs[0]["columnName"][1])
+
+# every pdf file hase his personal template
